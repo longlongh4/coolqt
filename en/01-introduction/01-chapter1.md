@@ -75,6 +75,87 @@ Don't know how to use C++ or you have your favourite one? No problem, Qt has a r
 Here is a picture from [Wikipedia](http://en.wikipedia.org/wiki/Qt_\(framework\))
 
 ![Bindings](../../figures/000fig0101.png)
+
+- Python
+	- [PySide](http://qt-project.org/wiki/Category:LanguageBindings::PySide) (LGPL)
+	
+		The PySide project provides LGPL-licensed Python bindings for the Qt cross-platform application and UI framework, as well as a complete toolchain for rapidly generating bindings for any Qt-based C++ class hierarchies. PySide Qt bindings allow both free open source and proprietary software development and ultimately aim to support all of the platforms as Qt itself.
+	
+	- [PyQt](http://www.riverbankcomputing.com/news) (GPL/commercial)
+	
+		PyQt is a set of Python bindings for Nokia's Qt application framework and runs on all platforms supported by Qt including Windows, MacOS/X and Linux. There are two sets of bindings: PyQt v4 supports Qt v4; and the older PyQt v3 supports Qt v3 and earlier. The bindings are implemented as a set of Python modules and contain over 300 classes and over 6,000 functions and methods.
+	
+- Java
+	- [Qt Jambi](http://qt-jambi.org/) (LGPL)
+	
+		Qt Jambi – Qt bindings to the Java programming language – has been discontinued in order to focus resources on the Qt cross platform application and UI framework. 
+	
+- Ruby
+	- [QtRuby](http://techbase.kde.org/Development/Languages/Ruby) 
+	
+		The project provides complete bindings to both the KDE API and the Qt APIs. The Korundum package includes both a QtRuby Qt-only binding along with the full combined Qt/KDE one. The QtRuby package contains just Qt bindings with no dependencies on KDE.
+	
+- BASIC
+	- [Basic for Qt](http://www.kbasic.com/)
+	
+		KBasic uses Qt as its toolkit to provide cross-platform abilities. KBasic is a further BASIC dialect and is related to VB.NET™, Visual Basic®, Visual Basic for Application® and Java™. It combines several features and includes built-in backward support for QBasic®.
+	
+- Ada 2005
+	- [QtAda](http://www.qtada.com/)
+	
+		QtAda is an Ada2005 language bindings to the Qt libraries and a set of useful tools. Qt is a cross-platform C++ development framework developed and supported by Nokia. QtAda supports Qt version 4.6 and later.
+
+		QtAda allows easly to create cross-platform powerful graphical user interface completely on Ada 2005. QtAda applications will work on most popular platforms — Microsoft Windows, Mac OS X, Linux/Unix — without any changes and platform specific code. QtAda applications use native look and feel (and even use user's Control Panel setting) on every supported platforms.
+
+		QtAda allows to use all power of visual GUI development with Qt Designer on all software lifecycle stages — from prototyping and up to maintanace.
+	
+- Perl
+	- [Qt for Perl](http://opendesktop.org/content/show.php/?action=content&content=69748)
+	
+		The goal of this project is to maintain a Perl Object Oriented interface to the Qt GUI Toolkit.
+	
+- C#
+	- [Qyoto](http://techbase.kde.org/Development/Languages/Qyoto)
+	
+		Qyoto makes it possible to develop Qt and KDE applications using C#, or any other .NET language. Qyoto uses SMOKE, and offers access to almost all Qt and KDE classes.
+	
+- D
+	- [QtD](http://www.dsource.org/projects/qtd)
+	
+		QtD is a binding of the Qt application and UI framework to the D programming language version 2.
+	
+- Pascal
+	- [Free Pascal Qt4 Binding](http://users.telenet.be/Jan.Van.hijfte/qtforfpc/fpcqt4.html)
+	
+		The Free Pascal Qt4 binding allows Free Pascal to interface with the C++ Library Qt. This binding does not cover the whole Qt4 framework but only the classes needed by the Cross Platform Lazarus IDE to use Qt as a Widget set. 
+	
+- Lua
+	- [QtLua](http://www.nongnu.org/libqtlua/)
+	
+		The QtLua library aims to make Qt4 applications scriptable using the Lua scripting language. It is an alternative to the QtScript module.
+
+		QtLua does not generate or use generated binding code for Qt. Instead it provides useful C++ wrapper classes to make C++ and lua objects accessible from both lua and C++. It takes advantages of the Qt meta object system to expose QObject members to lua scripts.
+
+		QtLua is not designed to develop an application in pure Lua but rather to extend a Qt C++ application using Lua as scripting language.
+	
+- Haskell
+	- [qtHaskell](http://qthaskell.berlios.de/)
+	
+		The qtHaskell project provides a set of Haskell bindings for Qt. Haskell programmers can access the “Signals and Slots” interface logic, design interfaces using Qt Designer and write scripted applications using the Qt ECMA/Javascript engine.
+	
+	- [HsQML](http://www.gekkou.co.uk/software/hsqml/)
+	
+		HsQML provides a Haskell binding to the Qt Quick framework. It allows you to write graphical applications where the front-end is written in Qt Quick’s QML language (incorporating JavaScript) and the back-end is written in Haskell.
+	
+- PHP
+	- [PHP-Qt](https://developer.berlios.de/projects/php-qt/)
+	
+		PHP-Qt is an extension for PHP5 that aims to write software with the Qt Toolkit. It provides an object-oriented interface to the Qt4 Framework and allowes to write Qt applications in the PHP language.
+		
+- Scheme
+	- [Qt for Chicken Scheme](http://wiki.call-cc.org/eggref/4/qt)
+	
+		This extension provides an easy to use interface to Trolltech's Qt 4 toolkit. It provides bindings for the GUI side of Qt, as well as for Qt's builtin networking and dbus libraries. 
 	
 ## About Qt Quick
 
