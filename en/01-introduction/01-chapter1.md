@@ -285,7 +285,9 @@ For now, you can't do anything. We will create a mouse area, then when you click
 	    }
 	}
 
-We add a MouseArea component as child of the Rectangle instance and make it fill the parent, so when you click anywhere within the Rectangle, we will receive an event. `onClicked` is a signal handler, `clicked` signal will invoke the handler automatically.
+We add a MouseArea component as child of the Rectangle instance and make it fill the parent, so when you click anywhere within the Rectangle, we will receive an event. `onClicked` is a signal handler, `clicked` signal will invoke the handler automatically. 
 
-Congratulations! You know how to programe with Qt Quick now, it is very easy, right? Have a little rest, I will show you more interesting things in the next chapter.
+![snapshot](../../figures/000fig0102.png)
+
+Congratulations! You have known how to programe with Qt Quick now, it is very easy, right? Have a little rest, I will show you more interesting things in the next chapter.
 
