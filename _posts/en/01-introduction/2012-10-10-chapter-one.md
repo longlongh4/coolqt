@@ -82,7 +82,7 @@ Don't know how to use C++ or you have your favourite one? No problem, Qt has a r
 
 Here is a picture from [Wikipedia](http://en.wikipedia.org/wiki/Qt_\(framework\))
 
-![Bindings](../../figures/000fig0101.png)
+![Bindings](/figures/000fig0101.png)
 
 - Python
 	- [PySide](http://qt-project.org/wiki/Category:LanguageBindings::PySide) (LGPL)
@@ -295,7 +295,7 @@ For now, you can't do anything. We will create a mouse area, then when you click
 
 We add a MouseArea component as child of the Rectangle instance and make it fill the parent, so when you click anywhere within the Rectangle, we will receive an event. `onClicked` is a signal handler, `clicked` signal will invoke the handler automatically. 
 
-![snapshot](../../figures/000fig0102.png)
+![snapshot](/figures/000fig0102.png)
 
 Congratulations! You have known how to programe with Qt Quick now, it is very easy, right? Have a little rest, I will show you more interesting things in the next chapter.
 
