@@ -159,9 +159,32 @@ Here is a picture from [Wikipedia](http://en.wikipedia.org/wiki/Qt_\(framework\)
 	
 ## About Qt Quick
 
+### Introduction to Qt Quick
 
+Today’s consumers and enterprise users are tough to please. They grew up using slick UIs on their game consoles and seeing even fancier UIs at the movies. Specifications and feature lists alone are no longer selling points; they are means to an end. Visual impact and experience WOW are the selling points that matter today, and the consumer expects this visual delight whether they are using a powerful corporate notebook computer, a mobile device, a sleek tablet, or a set-top box.
+
+Delivering this experience requires designers and developers to work together like never before. Gone are the days where designers could throw pixel maps over the wall and expect developers to implement their vision. So too are the days when developers could code purely for performance without regard to visual appeal. Design/development/test must become an iterative cycle, not a linear path. The Qt framework is known for high runtime performance and small footprint, making it ideal for mobile, embedded, and netbook applications. The Qt 4.7 release extends Qt with QML, a declarative language that codes the way designers think, and Qt Quick elements that are the building blocks for applications, Each frame of a story board is declared as a branch in an element tree; each visual aspect of a frame is declared as a property of elements on the branch; each transition between frames can be decorated with a variety of animations and effects.
+
+The Qt Quick runtime implements the UI and provides direct access to native APIs and performance boosts with C++ extensions where appropriate. And because the runtime is implemented in Qt, it delivers cross-platform reach and flexibility.
+
+Qt Creator, a development environment built for collaboration between designers and developers, supports Qt Quick. Designers work in a visual environment, developers work in a full-featured IDE, and Qt Creator supports round-trip iteration from design, to code, to test, and back to design.
+
+Qt is built for the way product teams work today. Core business logic is coded by developers and optimized for performance, the interface is crafted by designers working with visual tools, and integrated tooling supports round-trip iteration between the disciplines.
+
+### Overview
+
+Qt’s new user interface technology consists of the QML language, Elements that provide basic building blocks of the language, the QtDeclarative (C++) module that provides a runtime for the QML language, and a scripting language based on JavaScript that allows developers to implement logic in their projects with no C++ coding required. This technology set is supported by the Qt Creator tool that now includes a visual designer and other extensions to support creating, testing, debugging, and optimizing projects.
+
+QML provides mechanisms to declaratively build an object tree using elements. QML improves the integration between JavaScript and Qt’s existing QObject based type system, adds support for automatic property bindings and provides network transparency at the language level.
+Elements are a sophisticated set of graphical and behavioral building blocks. There are currently over 80 elements in the language, including visual elements such Rectangle, Gradient, and AnimatedImage; interaction elements including MouseArea and Flickable; state elements including PropertyChanges and StateChangeScript; and transition elements including Transition and SequentialAnimation. There are also elements to handle data, views, position, and other sophisticated aspects of building fluid UIs without C++ code.
+
+Elements are combined together in QML documents to build components ranging in complexity from simple buttons and sliders, to complete internet-enabled applications like a Flickr photo browser. Developers and designers are free to build their own or choose from libraries of pre-built components.
+
+Qt Quick builds on Qt’s existing strengths. QML can be used to incrementally extend an existing application or to build completely new applications. QML is fully extensible from C++.
 
 ## A Simple Example With Qt Qucik
+
+
 
 ## Something Interesting
 
