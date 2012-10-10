@@ -186,6 +186,10 @@ Qt Quick builds on Qt’s existing strengths. QML can be used to incrementally e
 
 Let's start with a "Hello world" example. hoho~~
 
+###Step1
+
+let's create a yellow rectangle of 360 x 360 pixels.
+
 	//File: hello_world.qml
 	
 	import QtQuick 2.0
@@ -194,19 +198,7 @@ Let's start with a "Hello world" example. hoho~~
 	    width: 360
 	    height: 360
 	    color : "yellow"
-	    Text {
-	        anchors.centerIn: parent
-	        text: "Hello World"
-	    }
-	    MouseArea {
-	        anchors.fill: parent
-	        onClicked: {
-	            Qt.quit();
-	        }
-	    }
 	}
-
-The above QML code produces a yellow rectangle of 360 x 360 pixels, with text "Hello World" placed center in the rectangle, when you click anywhere within the rectagnle ,this application will exit immediately.
 
 We run QML viewer to see the result of our work:
 
@@ -215,6 +207,66 @@ We run QML viewer to see the result of our work:
 A QML document is a piece of QML code that contains at least one import statement and exactly one top-level component. In our example, Rectangle is the single top-level component. Generally, a QML document corresponds to a file, but it could also be text stored in a string or a URL pointing to QML document stored on a remote server.
 
 The statement `import QtQuick 2.0` makes all the QML components of Qt Quick 2 (which is introduced by Qt5) available to our QML document. 
+
+Components are the QML equivalents of C++ classes. They have properties, methods (member functions), signals and slots. The occurrence of Rectangle above is an instance of a Rectangle component: a yellow 360×360 pixel instance of a Rectangle component. In the Qt documentation, element is often used as a synonym for component. Components with a visual representation like a Rectangle or Text are called items. Component names always start with an uppercase letter followed by zero or more letters, digits and underscores.
+
+An instance of a component is characterized by its properties, which are name-value pairs. The Rectangle instance above has three properties width, height and color with the values 360, 360 and yellow, respectively. Property names always start with a lowercase letter followed by zero or more letters, digits and underscores. Properties are type-safe, however, the line
+
+	width: "one"
+	
+would be illegal, because the width property expects a number of type real. QML supports the following basic types: bool, color, date, font, int, list, point, real, rect, size, string, time, url.
+
+Several properties can be written in one line separated by semicolon:
+
+	width: 360; height: 360
+	color: "yellow"
+
+The order of properties is irrelevant. We could rewrite the Rectangle as
+
+	Rectangle {
+	    color: "yellow"
+	    height: 360
+	    width: 360
+	}
+
+and the result would be the same.
+
+Comments are marked in QML in the same way as in C++. Comments to the end of the line start with //. Multi-line comments start with /\* and end with \*/.
+
+examples:
+	
+	/*
+		Display a yellow rectangle of 360x360 pixels
+	*/
+	
+	Rectangle {
+	    width: 360   //width of the rectangle
+	    height: 360   // height of the rectangle
+	    color : "yellow"    //this rectangle is yellow
+	}
+
+### Step2
+
+Let's add some text to this lonely rectangle
+
+	Rectangle {
+	    width: 360
+	    height: 360
+	    color : "yellow"
+	    Text {
+	        anchors.centerIn: parent
+	        text: "Hello World"
+	    }
+	}
+
+The Text component is a child of the Rectangle and is located at the center of the Rectangle. The  displayed text is "Hello World".
+
+This simple example shows how to compose basic components into a more complex components. The components or strictly speaking the component instances are arranged in a tree. In our example, the Rectangle is the root of the tree and Text is the root’s children. The children could again have children of their own and so on. 
+
+### Step3
+
+
+
 ## Something Interesting
 
 
