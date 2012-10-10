@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Chapter One
+permalink: Chapter_One.html
 ---
 
 {{ page.title }}
