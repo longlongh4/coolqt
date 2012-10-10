@@ -265,9 +265,27 @@ This simple example shows how to compose basic components into a more complex co
 
 ### Step3
 
+Respond to click event
 
+For now, you can't do anything. We will create a mouse area, then when you click anywhere within the rectagnle ,this application will exit immediately.
 
-## Something Interesting
+	Rectangle {
+	    width: 360
+	    height: 360
+	    color : "yellow"
+	    Text {
+	        anchors.centerIn: parent
+	        text: "Hello World"
+	    }
+	    MouseArea {
+	        anchors.fill: parent
+	        onClicked: {
+	            Qt.quit();
+	        }
+	    }
+	}
 
+We add a MouseArea component as child of the Rectangle instance and make it fill the parent, so when you click anywhere within the Rectangle, we will receive an event. `onClicked` is a signal handler, `clicked` signal will invoke the handler automatically.
 
+Congratulations! You know how to programe with Qt Quick now, it is very easy, right? Have a little rest, I will show you more interesting things in the next chapter.
 
