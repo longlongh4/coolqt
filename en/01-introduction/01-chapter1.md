@@ -212,6 +212,9 @@ We run QML viewer to see the result of our work:
 
 	qmlscene hello_world.qml
 
+A QML document is a piece of QML code that contains at least one import statement and exactly one top-level component. In our example, Rectangle is the single top-level component. Generally, a QML document corresponds to a file, but it could also be text stored in a string or a URL pointing to QML document stored on a remote server.
+
+The statement `import QtQuick 2.0` makes all the QML components of Qt Quick 2 (which is introduced by Qt5) available to our QML document. 
 ## Something Interesting
 
 
