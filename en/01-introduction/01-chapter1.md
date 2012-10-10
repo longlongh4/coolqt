@@ -187,6 +187,8 @@ Qt Quick builds on Qt’s existing strengths. QML can be used to incrementally e
 Let's start with a "Hello world" example. hoho~~
 
 <pre><code>
+//File: hello_world.qml
+
 import QtQuick 2.0
 
 Rectangle {
@@ -207,6 +209,11 @@ Rectangle {
 </code></pre>
 
 The above QML code produces a yellow rectangle of 360 x 360 pixels, with text "Hello World" placed center in the rectangle, when you click anywhere within the rectagnle ,this application will exit immediately.
+
+We run QML viewer to see the result of our work:
+
+	qmlscene hello_world.qml
+
 ## Something Interesting
 
 
