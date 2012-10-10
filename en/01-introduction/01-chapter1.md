@@ -184,8 +184,29 @@ Qt Quick builds on Qt’s existing strengths. QML can be used to incrementally e
 
 ## A Simple Example With Qt Qucik
 
+Let's start with a "Hello world" example. hoho~~
 
+<pre><code>
+import QtQuick 2.0
 
+Rectangle {
+    width: 360
+    height: 360
+    color : "yellow"
+    Text {
+        anchors.centerIn: parent
+        text: "Hello World"
+    }
+    MouseArea {
+        anchors.fill: parent
+        onClicked: {
+            Qt.quit();
+        }
+    }
+}
+</code></pre>
+
+The above QML code produces a yellow rectangle of 360 x 360 pixels, with text "Hello World" placed center in the rectangle, when you click anywhere within the rectagnle ,this application will exit immediately.
 ## Something Interesting
 
 
